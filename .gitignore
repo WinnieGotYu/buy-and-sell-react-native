@@ -8,6 +8,6 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
-
+.watchnmanconfig
 # macOS
 .DS_Store
