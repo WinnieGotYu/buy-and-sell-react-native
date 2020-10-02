@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, Image, SafeAreaView } from 'react-native';
+
 
 export default function App() {
-  let x = 1;
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Hello Winnie</Text>
+      <Text numberOfLines={3}>Hello WORLD WORLD WORLD </Text>
+      <Image style={styles.meme}source={require("./assets/meme.png")}/>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
@@ -15,6 +16,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'dodgerblue'
   },
+  meme: {
+    height: 400, 
+    width: "100%",
+    // justifyContent: 'center',
+    // alignItems: 'center'
+  }
 });
