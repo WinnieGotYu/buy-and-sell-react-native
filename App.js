@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, Image, SafeAreaView, Button } from "react-native";
+import { StyleSheet, Text, Image, SafeAreaView, Button, Alert } from "react-native";
 
 export default function App() {
   return (
@@ -11,10 +11,21 @@ export default function App() {
         source={{
           width: 200,
           height: 200,
-          uri: "https://picsum.photos/id/237/200/300"
+          uri: "https://picsum.photos/id/237/200/300",
         }}
       />
-      <Button title="Click Me" onPress={() => console.log("Button Clicked")}/>
+      <Button
+        title="Click Me"
+        onPress={() =>
+          Alert.alert("Select A Pet", "I prefer this pet:", [
+            {
+              text: "Dog",
+              onPress: () => console.log("You selected Dog"),
+            },
+            { text: "Cat", onPress: () => console.log("You selected Cat") },
+          ])
+        }
+      />
       <StatusBar style="auto" />
     </SafeAreaView>
   );
