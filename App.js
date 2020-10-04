@@ -1,6 +1,14 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, Image, SafeAreaView, Button, Alert } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  Image,
+  SafeAreaView,
+  Button,
+  Alert,
+  Platform,
+  StatusBar,
+} from "react-native";
 
 export default function App() {
   return (
@@ -34,11 +42,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   meme: {
     height: 400,
     width: "100%",
-    // justifyContent: 'center',
-    // alignItems: 'center'
   },
 });
