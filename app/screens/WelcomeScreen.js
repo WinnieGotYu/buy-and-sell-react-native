@@ -23,11 +23,6 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end", // Default is "flex-start"
     alignItems: "center",
   },
-  logoContainer:{
-    position: "absolute",
-    top: 90,
-    alignItems: "center"
-  },
   logo: {
     width: 100,
     height: 100,
@@ -36,6 +31,11 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 70,
     backgroundColor: "#fc5c65",
+  },
+  logoContainer:{
+    position: "absolute",
+    top: 90,
+    alignItems: "center"
   },
   signUpButton: {
     width: "100%",
