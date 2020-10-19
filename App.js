@@ -1,24 +1,21 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
+
+import AppText from "./app/components/AppText"
+
 
 export default function App() {
   return (
     <View style={styles.app}>
-      <View style={styles.container}></View>
+    <AppText>I Love React Native!</AppText>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   app: {
-    flex:1, 
-    justifyContent: 'center', 
-    alignItems: 'center'
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
-  container: {
-    backgroundColor: 'dodgerblue', 
-    width: 100, 
-    height: 100,
-
-  }
-})
+});
