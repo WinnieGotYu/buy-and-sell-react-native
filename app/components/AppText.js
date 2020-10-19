@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, StyleSheet, Platform} from 'react-native';
 
+// <Heading> My Heading </Heading>
 function AppText({children}) {
   return (
   <Text style={styles.text}>{children}</Text>
