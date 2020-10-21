@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 
-import AppText from "./app/components/AppText"
+import AppText from "./app/components/AppText/AppText"
 
 
 export default function App() {
