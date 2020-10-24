@@ -7,7 +7,7 @@ import colors from "../config/colors";
 function WelcomeScreen(props) {
   return (
     <ImageBackground
-    blurRadius={7}
+      blurRadius={7}
       source={require("../assets/background.jpg")}
       style={styles.background}
     >
@@ -17,8 +17,8 @@ function WelcomeScreen(props) {
       </View>
       <View style={styles.buttonContainer}>
         <AppButton title="Login" />
-        <AppButton title="Register" color="secondary"/>
-        </View>
+        <AppButton title="Register" color="secondary" />
+      </View>
     </ImageBackground>
   );
 }
